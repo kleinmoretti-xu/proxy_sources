@@ -1,0 +1,14 @@
+#!name=起点读书
+#!desc=福利中心任务
+#!author=@kleinmoretti-xu
+#!icon = https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/qidian.png
+#!input = qd_timeout
+#!date = 2025-05-19
+[MITM]
+hostname=h5.if.qidian.com
+
+[Script]
+http-request https\:\/\/h5\.if\.qidian\.com\/argus\/api\/v1\/video\/adv\/finishWatch script-path=https://raw.githubusercontent.com/kleinmoretti-xu/proxy_sources/refs/heads/main/script/qx/qidian/qidian.cookie.js, tag=cookie获取, requires-body=true
+http-response https\:\/\/h5\.if\.qidian\.com\/argus\/api\/v1\/video\/adv\/mainPage script-path=https://raw.githubusercontent.com/kleinmoretti-xu/proxy_sources/refs/heads/main/script/qx/qidian/qidian.taskId.js, tag=获取任务, requires-body=true
+
+cron "30 10 * * *" script-path=https://raw.githubusercontent.com/kleinmoretti-xu/proxy_sources/refs/heads/main/script/qx/qidian/qd.js, tag=起点读书, timeout=180
