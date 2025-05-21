@@ -5,4 +5,4 @@ $persistentStore.write(task1,"TASK_1");
 console.log(`起点任务task1获取成功：${task1}`);
 $persistentStore.write(task2,"TASK_2");
 console.log(`起点任务task2获取成功：${task2}`);
-$done();
+$done($response.body);
