@@ -28,11 +28,11 @@ var loop = async (step, session)=> {
         }
     }
 }
-
-if(task1 && session1) {
-    (async () => await loop(7, session1))()
-}
-
-if(task2 && session2) {
-    (async () => await loop(2, session2))()
-}
+(async () => {
+    if(task1 && session1) {
+        await loop(7, session1);
+    }
+    if(task2 && session2) {
+        await loop(2, session2);
+    }
+})()
