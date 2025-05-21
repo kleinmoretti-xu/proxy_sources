@@ -9,4 +9,4 @@ h5.if.qidian.com
 
 [Script]
 # http-request https\:\/\/h5\.if\.qidian\.com\/argus\/api\/v1\/video\/adv\/finishWatch script-path=https://raw.githubusercontent.com/kleinmoretti-xu/proxy_sources/refs/heads/main/script/qx/qidian/qidian.cookie.js, tag=cookie获取, requires-body=true,enable=true
-http-response https\:\/\/h5\.if\.qidian\.com\/argus\/api\/v1\/video\/adv\/mainPage script-path=https://raw.githubusercontent.com/kleinmoretti-xu/proxy_sources/refs/heads/main/script/loon/qidian/qidian.taskId.js, tag=获取任务, requires-body=true
+http-response https\:\/\/h5\.if\.qidian\.com\/argus\/api\/v2\/video\/adv\/mainPage script-path=https://raw.githubusercontent.com/kleinmoretti-xu/proxy_sources/refs/heads/main/script/loon/qidian/qidian.taskId.js, tag=获取任务, requires-body=true
