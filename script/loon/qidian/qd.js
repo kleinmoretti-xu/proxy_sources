@@ -2,7 +2,7 @@ var task1 = $persistentStore.read("TASK_1");
 var session1 = $persistentStore.read("session_1");
 var task2 = $persistentStore.read("TASK_2");
 var session2 = $persistentStore.read("session_2");
-var waitTime= $argument.wait_time ? $argument.wait_time : 10;
+var waitTime= 10;
 
 var sleep = (delay)=> new Promise((resolve)=> setTimeout(resolve, delay));
 
