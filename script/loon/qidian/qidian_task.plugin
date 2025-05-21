@@ -4,9 +4,6 @@
 #!icon = https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/qidian.png
 #!date = 2025-05-19
 
-[Argument]
-#wait_time = input, tag=每次请求间隔, desc=每次请求间隔,不怕封号的可以设置为0
-
 [MITM]
 hostname=h5.if.qidian.com
 

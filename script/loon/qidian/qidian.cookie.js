@@ -24,3 +24,4 @@ if (session.body.indexOf(task1) != -1) {
     console.log(session);
     console.log("🔴广告信息获取失败!");
 }
+$done();
