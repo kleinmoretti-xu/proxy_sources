@@ -2,7 +2,7 @@
 #!desc = Talkatone去广告
 #!author = @kleinmoretti-xu
 #!homepage = https://github.com/kleinmoretti-xu
-#!icon = 插件的图标
+#!icon = https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/talkatone.png
 #!system = iOS
 #!system_version = 16.2
 #!loon_version = 3.3.1(866)
