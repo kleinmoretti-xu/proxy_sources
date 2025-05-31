@@ -1,0 +1,16 @@
+#!name = Talkatone去广告
+#!desc = Talkatone去广告
+#!author = @kleinmoretti-xu
+#!homepage = https://github.com/kleinmoretti-xu
+#!icon = 插件的图标
+#!system = iOS
+#!system_version = 16.2
+#!loon_version = 3.3.1(866)
+#!tag = 去广告,Talkatone
+
+[Rewrite]
+^https?:\/\/alt-r\.my\.com\/mobile reject-dict
+^https?:\/\/imgx\.jampp\.com\/imgsrv\/tn reject-img
+
+[MITM]
+hostname = alt-r.my.com, imgx.jampp.com
