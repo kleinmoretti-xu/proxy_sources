@@ -30,9 +30,9 @@ var loop = async (step, session) => {
 }
 
 if (task1 && session1) {
-    (async () => await loop(7, session1))()
+    (async () => await loop(8, session1))()
 }
 
 if (task2 && session2) {
-    (async () => await loop(2, session2))()
+    (async () => await loop(3, session2))()
 }
