@@ -7,12 +7,13 @@
 #!system_version = 16.2
 #!loon_version = 3.3.1(866)
 #!tag = 去广告,优酷
-
+[Rule]
+DOMAIN-SUFFIX,ott.cibntv.net,REJECT-VIDEO
 [Script]
 # 视频开头广告
-http-response ^http?:\/\/vali\-g1\.cp31\.ott\.cibntv\.net\/youku script-path=https://raw.githubusercontent.com/kleinmoretti-xu/proxy_sources/refs/heads/main/script/loon/youku/youku_2.0.js, requires-body=true, timeout=60, tag=优酷去广告, enable=true
+#http-response ^http?:\/\/vali\-g1\.cp31\.ott\.cibntv\.net\/youku script-path=https://raw.githubusercontent.com/kleinmoretti-xu/proxy_sources/refs/heads/main/script/loon/youku/youku_2.0.js, requires-body=true, timeout=60, tag=优酷去广告, enable=true
 http-response ^https?:\/\/(gw|g)\.alicdn\.com\/(imgextra|tfs|bao) script-path=https://raw.githubusercontent.com/kleinmoretti-xu/proxy_sources/refs/heads/main/script/loon/youku/youku_2.0.js, requires-body=true, timeout=60, tag=优酷去广告, enable=true
 http-response ^https?:\/\/yk\-ssp\.ad\.youku\.com script-path=https://raw.githubusercontent.com/kleinmoretti-xu/proxy_sources/refs/heads/main/script/loon/youku/youku_2.0.js, requires-body=true, timeout=60, tag=优酷去广告, enable=true
 
 [MITM]
-hostname = vali-g1.cp31.ott.cibntv.net, gw.alicdn.com, g.alicdn.com, yk-ssp.ad.youku.com
+hostname = gw.alicdn.com, g.alicdn.com, yk-ssp.ad.youku.com
