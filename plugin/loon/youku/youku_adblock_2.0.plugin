@@ -13,7 +13,6 @@ DOMAIN-SUFFIX,ttwid.bytedance.com,REJECT
 DOMAIN-SUFFIX,jinritemai.com,REJECT
 DOMAIN-SUFFIX,adsmind.ugdtimg.com,REJECT-VIDEO
 DOMAIN-KEYWORD,ott.cibntv.net,REJECT-VIDEO
-USER-AGENT,Youku-ntk*,REJECT-VIDEO
 
 [Script]
 # 视频开头广告
