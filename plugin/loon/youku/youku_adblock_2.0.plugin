@@ -10,7 +10,7 @@
 
 [Script]
 # 视频开头广告 vali-g1.cp31.ott.cibntv.net/youku/
-http-response ^http?:\/\/vali-g1\.cp31\.ott\.cibntv\.net\/youku script-path=https://raw.githubusercontent.com/kleinmoretti-xu/proxy_sources/refs/heads/main/script/loon/youku/youku_2.0.js, requires-body=true, timeout=60, tag=优酷, enable=true
+http-response ^http?:\/\/vali\-g1\.cp31\.ott\.cibntv\.net\/youku script-path=https://raw.githubusercontent.com/kleinmoretti-xu/proxy_sources/refs/heads/main/script/loon/youku/youku_2.0.js, requires-body=true, timeout=60, tag=优酷去广告, enable=true
 
 [MITM]
-#hostname = vali-g1.cp31.ott.cibntv.net
+hostname = vali-g1.cp31.ott.cibntv.net
