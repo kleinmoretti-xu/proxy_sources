@@ -17,8 +17,6 @@ DOMAIN-KEYWORD,ott.cibntv.net,REJECT-VIDEO
 [Script]
 # 视频开头广告
 http-response ^https?:\/\/un\-acs\.youku\.com\/gw\/mtop\.youku\.play\.ups\.appinfo\.get script-path=https://raw.githubusercontent.com/kleinmoretti-xu/proxy_sources/refs/heads/main/script/loon/youku/youku_2.0.js, requires-body=true, timeout=60, tag=优酷去广告, enable=true
-#http-response ^https?:\/\/adsmind\.ugdtimg\.com\/ads_svp_video script-path=https://raw.githubusercontent.com/kleinmoretti-xu/proxy_sources/refs/heads/main/script/loon/youku/youku_2.0.js, requires-body=true, timeout=60, tag=优酷去广告, enable=true
-#http-response ^http?:\/\/vali\-g1\.cp31\.ott\.cibntv\.net\/youku script-path=https://raw.githubusercontent.com/kleinmoretti-xu/proxy_sources/refs/heads/main/script/loon/youku/youku_2.0.js, requires-body=true, timeout=60, tag=优酷去广告, enable=true
 http-response ^https?:\/\/(gw|g)\.alicdn\.com\/(imgextra|tfs|bao) script-path=https://raw.githubusercontent.com/kleinmoretti-xu/proxy_sources/refs/heads/main/script/loon/youku/youku_2.0.js, requires-body=true, timeout=60, tag=优酷去广告, enable=true
 
 [MITM]
